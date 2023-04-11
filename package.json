@@ -1,5 +1,6 @@
 {
-  "name": "react-todo-list-container-view",
+  "name": "zustand-todo-list",
+  "description": "todo list web application built using zustand and the container/view design pattern",
   "private": true,
   "version": "0.0.0",
   "type": "module",
