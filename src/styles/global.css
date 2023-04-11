@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+body {
+  @apply bg-gradient-to-tl from-purple-800 to-indigo-600 text-white font-Figtree;
+}
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-zinc-800;
+  border-radius: 14px;
+}

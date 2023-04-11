@@ -1,8 +1,9 @@
-export function App() {
+import { TodoList } from './screens';
 
+export function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
+    <div className="App flex flex-col items-center justify-center h-screen">
+      <TodoList />
     </div>
-  )
+  );
 }
