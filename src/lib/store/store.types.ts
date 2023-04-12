@@ -5,6 +5,7 @@ export interface CoreStoreState {
 export interface CoreStoreActions {
   handleCompleteTodo(id: string): void;
   handleUpdateTodo(id: string, newLabel: string): void;
+  handleNewTodo(label: string): void;
   handleCompleteAllTodos(): void;
   handleCleanTodoList(): void;
   handleResetTodoList(): void;

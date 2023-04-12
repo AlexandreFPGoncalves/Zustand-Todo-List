@@ -1,1 +1,1 @@
-export * from './todolist';
+export * from './todolist/todolist.core';

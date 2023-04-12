@@ -2,7 +2,7 @@ import { TodoList } from './screens';
 
 export function App() {
   return (
-    <div className="App flex flex-col items-center justify-center h-screen">
+    <div className="App h-screen w-screen flex justify-center">
       <TodoList />
     </div>
   );

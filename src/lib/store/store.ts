@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import { createJSONStorage, devtools, persist } from 'zustand/middleware';
 import { immer } from 'zustand/middleware/immer';
 import { CoreStore, CoreStoreState, CoreStoreActions } from './store.types';
+import { v4 as uuid } from 'uuid';
 
 const initialState: CoreStoreState = {
   todoList: [
@@ -29,6 +30,22 @@ const actions = (set: any): CoreStoreActions => {
       }),
       false,
       'update_todo'
+    );
+  };
+
+  const handleNewTodo = (label: string) => {
+    set(
+      (state: CoreStoreState) => {
+        const newTodo = {
+          id: uuid(),
+          label: label,
+          isCompleted: false,
+        };
+
+        state.todoList = [...state.todoList, newTodo];
+      },
+      false,
+      'new_todo'
     );
   };
 
@@ -65,6 +82,7 @@ const actions = (set: any): CoreStoreActions => {
   return {
     handleCompleteTodo,
     handleUpdateTodo,
+    handleNewTodo,
     handleCompleteAllTodos,
     handleCleanTodoList,
     handleResetTodoList,
@@ -80,13 +98,13 @@ export const useCoreStore = create<CoreStore>()(
           ...actions(set),
         }),
         {
-          name: 'CORE.STORE',
+          name: 'TODO.STORE',
           storage: createJSONStorage(() => sessionStorage),
         }
       )
     ),
     {
-      name: 'CORE.STORE',
+      name: 'TODO.STORE',
     }
   )
 );

@@ -1,5 +1,4 @@
 {
-  "homepage": "https://AlexandreFPGoncalves.github.io/Zustand-Todo-List",
   "name": "zustand-todo-list",
   "description": "todo list web application built using zustand and the container/view design pattern",
   "private": true,
@@ -8,14 +7,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.0",
     "clsx": "^1.2.1",
-    "gh-pages": "^5.0.0",
     "prettier": "^2.8.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
