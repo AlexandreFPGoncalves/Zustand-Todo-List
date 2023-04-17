@@ -33,6 +33,16 @@ const actions = (set: any): CoreStoreActions => {
     );
   };
 
+  const handleDeleteTodo = (id: string) => {
+    set(
+      (state: CoreStoreState) => ({
+        todoList: state.todoList.filter((todo) => id !== todo.id),
+      }),
+      false,
+      'delete_todo'
+    );
+  };
+
   const handleNewTodo = (label: string) => {
     set(
       (state: CoreStoreState) => {
@@ -82,6 +92,7 @@ const actions = (set: any): CoreStoreActions => {
   return {
     handleCompleteTodo,
     handleUpdateTodo,
+    handleDeleteTodo,
     handleNewTodo,
     handleCompleteAllTodos,
     handleCleanTodoList,

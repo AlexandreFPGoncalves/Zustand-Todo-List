@@ -7,10 +7,10 @@ body {
 }
 
 *::-webkit-scrollbar {
-  width: 15px;
+  width: 3px;
 }
 
 *::-webkit-scrollbar-thumb {
   @apply bg-zinc-800;
-  border-radius: 14px;
+  border-radius: 12px;
 }
