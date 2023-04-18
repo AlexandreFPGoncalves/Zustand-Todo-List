@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         Figtree: 'Figtree, sans-serif',
       },
+      colors: {
+        bg: '#09090A',
+      },
     },
   },
   plugins: [],

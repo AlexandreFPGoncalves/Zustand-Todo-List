@@ -3,7 +3,7 @@
 @tailwind components;
 
 body {
-  @apply bg-gradient-to-tl from-purple-800 to-indigo-600 text-white font-Figtree;
+  @apply bg-bg font-Figtree text-slate-100;
 }
 
 *::-webkit-scrollbar {
@@ -11,6 +11,6 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  @apply bg-zinc-800;
+  @apply bg-violet-600;
   border-radius: 12px;
 }

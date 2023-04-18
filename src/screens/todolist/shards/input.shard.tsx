@@ -1,8 +1,8 @@
-import { PlusIcon } from '@radix-ui/react-icons';
+import { PlusCircledIcon } from '@radix-ui/react-icons';
 import { useState } from 'react';
 import { useCoreStore } from '../../../lib';
 
-export const NewTodoShard = () => {
+export const InputShard: React.FC = () => {
   const { handleNewTodo } = useCoreStore();
 
   const [label, setLabel] = useState<string>('');
@@ -23,11 +23,11 @@ export const NewTodoShard = () => {
   };
 
   return (
-    <div className="flex flex-row">
-      {label && <PlusIcon className="flex align-middle mt-1 cursor-pointer" onClick={handleInputOnClick} />}
+    <div className="static flex w-full items-center gap-2 rounded-2xl border-2 border-violet-600 p-3">
+      {label && <PlusCircledIcon className="h-5 w-5 cursor-pointer" onClick={handleInputOnClick} />}
       <input
         type="text"
-        className={'w-full bg-transparent outline-none'}
+        className={'text-bold w-full bg-transparent font-semibold capitalize outline-none'}
         placeholder="New Todo"
         value={label}
         onChange={(e) => setLabel(e.target.value)}

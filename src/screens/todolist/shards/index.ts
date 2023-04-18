@@ -1,7 +1,9 @@
 import { ListShard } from './list.shard';
-import { NewTodoShard } from './newTodo.shard';
+import { InputShard } from './input.shard';
+import { FooterShard } from './footer.shard';
 
 export const Shards = {
   ListShard,
-  NewTodoShard,
+  InputShard,
+  FooterShard,
 };
