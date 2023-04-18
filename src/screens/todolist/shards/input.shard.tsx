@@ -24,7 +24,6 @@ export const InputShard: React.FC = () => {
 
   return (
     <div className="static flex w-full items-center gap-2 rounded-2xl border-2 border-violet-600 p-3">
-      {label && <PlusCircledIcon className="h-5 w-5 cursor-pointer" onClick={handleInputOnClick} />}
       <input
         type="text"
         className={'text-bold w-full bg-transparent font-semibold capitalize outline-none'}
@@ -33,6 +32,12 @@ export const InputShard: React.FC = () => {
         onChange={(e) => setLabel(e.target.value)}
         onKeyDown={handleInputOnKeyDown}
       />
+      {label && (
+        <PlusCircledIcon
+          className="h-5 w-5 cursor-pointer transition-colors hover:text-violet-500"
+          onClick={handleInputOnClick}
+        />
+      )}
     </div>
   );
 };
