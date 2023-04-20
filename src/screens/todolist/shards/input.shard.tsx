@@ -23,9 +23,10 @@ export const InputShard: React.FC = () => {
   };
 
   return (
-    <div className="static flex w-full items-center gap-2 rounded-2xl border-2 border-violet-600 p-3">
+    <div className="static flex w-full items-center gap-2 rounded-2xl border-2 border-violet-600 p-3 ">
       <input
         type="text"
+        id="todoInput"
         className={'text-bold w-full bg-transparent font-semibold capitalize outline-none'}
         placeholder="New Todo"
         value={label}

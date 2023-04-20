@@ -5,11 +5,7 @@ import { CoreStore, CoreStoreState, CoreStoreActions } from './store.types';
 import { v4 as uuid } from 'uuid';
 
 const initialState: CoreStoreState = {
-  todoList: [
-    { id: '1', label: 'do the dishes', isCompleted: false },
-    { id: '2', label: 'walk cat', isCompleted: false },
-    { id: '3', label: 'haircut', isCompleted: false },
-  ],
+  todoList: [],
 };
 
 const actions = (set: any): CoreStoreActions => {

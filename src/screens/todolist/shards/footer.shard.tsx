@@ -9,7 +9,7 @@ export const FooterShard: React.FC = () => {
     <img
       src={images.ghLogo}
       onClick={handleGitHubOnClick}
-      className="transaction mt-[10%] flex h-6 w-6 cursor-pointer justify-center place-self-center invert hover:-translate-y-[1px]"
+      className="mb-[5%] cursor-pointer place-self-center invert transition hover:-translate-y-[2px] hover:opacity-80"
     />
   );
 };

@@ -19,8 +19,6 @@
     <a href="https://github.com/AlexandreFPGoncalves/Zustand-Todo-List/issues">Request Feature</a>
   </p>
 
-<!-- <img src="https://i.imgur.com/8lUi7mg.png" alt="Project Preview" width="35%"> -->
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -53,6 +51,8 @@
 ## About The Project
 
 Personal To-Do List Project, build using [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) and it's state management and the [Container/View Pattern](https://dev.to/ornio/container-view-pattern-in-react-inc-hooks-5404), the idea of this project is to gather new skills and knowledge while creating something functional.
+
+<img src="https://i.imgur.com/xcr7LxC.png" alt="Project Preview" width="50%">
 
 ### Built With
 
@@ -97,6 +97,8 @@ Have the <b>latest LTS</b> npm version installed on your machine from this [webs
 - [x] Development on a todo list using my state management
 - [x] Vercel Deployment
 - [x] Application Design
+  - [x] Removal of unused CSS
+- [x] emptyShard Component +
 
 See the [open issues](https://github.com/AlexandreFPGoncalves/Zustand-Todo-List/issues) for a full list of proposed features (and known issues).
 

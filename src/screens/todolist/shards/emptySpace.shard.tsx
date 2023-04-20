@@ -1,15 +1,22 @@
 import { images } from '../../../assets';
+import { useCoreStore } from '../../../lib';
 
-export const EmptySpace: React.FC = () => {
+export const EmptySpaceShard: React.FC = () => {
+  const handleNewTodoOnClick = useCoreStore((state) => state.handleNewTodo);
+
   return (
-    <div className="flex flex-col items-center">
-      <img height={128} width={128} src={images.tasks} />
-      <span
-        className="text-bold w-full bg-transparent text-center font-semibold capitalize outline-none"
-        style={{ marginTop: '24px' }}
-      >
-        No To-Dos, create a new one!
-      </span>
+    <div className="flex h-[40%] flex-col items-center pt-[10%] text-center font-semibold">
+      <img height={128} width={128} src={images.tasks} className="mb-8 ml-4" />
+      <text>List is Currently Empty</text>
+      <text>
+        Create a New{' '}
+        <span
+          onClick={() => handleNewTodoOnClick('')}
+          className="cursor-pointer font-bold text-violet-500 hover:text-violet-600"
+        >
+          To-Do
+        </span>
+      </text>
     </div>
   );
 };
