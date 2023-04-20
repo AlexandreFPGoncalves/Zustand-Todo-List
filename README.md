@@ -7,7 +7,7 @@
 
 <h3 align="center">AlexandreFPGoncalves</h3>
   <p align="center">
-    Zustand To-Do List
+    <img src="https://i.imgur.com/MgjPDOB.png" alt="Project Preview" width="50%">
     <br />
     <a href="https://github.com/AlexandreFPGoncalves/Zustand-Todo-List/wiki"><strong>Explore the Wiki »</strong></a>
     <br />
@@ -52,7 +52,7 @@
 
 Personal To-Do List Project, build using [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) and it's state management and the [Container/View Pattern](https://dev.to/ornio/container-view-pattern-in-react-inc-hooks-5404), the idea of this project is to gather new skills and knowledge while creating something functional.
 
-<img src="https://i.imgur.com/xcr7LxC.png" alt="Project Preview" width="50%">
+
 
 ### Built With
 
