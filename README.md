@@ -50,7 +50,7 @@
 
 ## About The Project
 
-Personal To-Do List Project, build using [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) and it's state management and the [Container/View Pattern](https://dev.to/ornio/container-view-pattern-in-react-inc-hooks-5404), the idea of this project is to gather new skills and knowledge while creating something functional.
+Personal To-Do List Project, build using [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) as it's state management and the [Container/View Pattern](https://dev.to/ornio/container-view-pattern-in-react-inc-hooks-5404), the idea of this project is to gather new skills and knowledge while creating something functional.
 
 
 
